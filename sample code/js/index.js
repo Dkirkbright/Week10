@@ -4,26 +4,27 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
     // Now safe to use device APIs
-	window.plugins.orientationchanger.lockOrientation('landscape');
+	//window.plugins.orientationchanger.lockOrientation('portrait');
 }
 
 $(document).on('pageinit', function() {
 
-
-
 	$('#messageButton').on('click', function() {
-		createMessage();
+		window.plugins.orientationchanger.lockOrientation('portrait-primary');
 	});
 	
 	$('#dialogButton').on('click', function() {
-		createDialog();
+		window.plugins.orientationchanger.lockOrientation('landscape-primary');
 	});
 
 
 	$('#notificationButton').on('click', function() {
-		createNotification();
+		window.plugins.orientationchanger.lockOrientation('landscape-secondary');
 	});
 
+	$('#2notificationButton').on('click', function() {
+		window.plugins.orientationchanger.lockOrientation('portrait-secondary');
+	});
 
 });
 
