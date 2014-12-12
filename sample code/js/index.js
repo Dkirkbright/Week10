@@ -1,9 +1,14 @@
 var notification_count=0;
 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+    // Now safe to use device APIs
+	window.plugins.orientationchanger.lockOrientation('landscape');
+}
+
 $(document).on('pageinit', function() {
 
-
-window.plugins.orientationchanger.lockOrientation('landscape');
 
 
 	$('#messageButton').on('click', function() {
