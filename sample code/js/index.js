@@ -3,26 +3,32 @@ var notification_count=0;
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-    // Now safe to use device APIs
-	//window.plugins.orientationchanger.lockOrientation('portrait');
+
+		//screen.lockOrientation('landscape-primary');
+		screen.orientation.lock('landscape');
+		
 }
 
 $(document).on('pageinit', function() {
 
 	$('#messageButton').on('click', function() {
-		screen.lockOrientation('portrait');
+		//screen.lockOrientation('portrait');
+		screen.orientation.lock('portrait');
 	});
 	
 	$('#dialogButton').on('click', function() {
-		screen.lockOrientation('landscape-primary');
+		//screen.lockOrientation('landscape-primary');
+		screen.orientation.lock('landscape-primary');
 	});
 
 	$('#notificationButton').on('click', function() {
-		screen.lockOrientation('landscape-secondary');
+		//screen.lockOrientation('landscape-secondary');
+		screen.orientation.lock('landscape-secondary');
 	});
 
 	$('#2notificationButton').on('click', function() {
-		screen.lockOrientation('portrait-secondary');
+		//screen.lockOrientation('portrait-secondary');
+		screen.orientation.lock('portrait-secondary');
 	});
 
 });
