@@ -22,5 +22,7 @@
 	
 	<!-- required for notifications -->
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+	
+	<gap:plugin name="com.boyvanderlaak.cordova.plugin.orientationchanger" version="0.1.1" />
 
 </widget>
