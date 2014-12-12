@@ -46,7 +46,7 @@ function createDialog() {
 function dialogDismissed(buttonIndex) {
 	
 	if(buttonIndex==1) new Toast({content: "Yeah that's right", duration: 3000});
-   	else if(buttonIndex==2) createDialog());
+   	else if(buttonIndex==2) createDialog();
 
 }
 
