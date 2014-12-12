@@ -1,7 +1,10 @@
 var notification_count=0;
-window.plugins.orientationchanger.lockOrientation('landscape');
 
 $(document).on('pageinit', function() {
+
+
+window.plugins.orientationchanger.lockOrientation('landscape');
+
 
 	$('#messageButton').on('click', function() {
 		createMessage();
