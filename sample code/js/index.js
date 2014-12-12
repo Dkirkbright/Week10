@@ -10,25 +10,24 @@ function onDeviceReady() {
 $(document).on('pageinit', function() {
 
 	$('#messageButton').on('click', function() {
-		window.plugins.orientationchanger.lockOrientation('portrait-primary');
+		screen.lockOrientation('portrait');
 	});
 	
 	$('#dialogButton').on('click', function() {
-		window.plugins.orientationchanger.lockOrientation('landscape-primary');
+		screen.lockOrientation('landscape-primary');
 	});
 
-
 	$('#notificationButton').on('click', function() {
-		window.plugins.orientationchanger.lockOrientation('landscape-secondary');
+		screen.lockOrientation('landscape-secondary');
 	});
 
 	$('#2notificationButton').on('click', function() {
-		window.plugins.orientationchanger.lockOrientation('portrait-secondary');
+		screen.lockOrientation('portrait-secondary');
 	});
 
 });
 
-
+/*
 
 function createMessage(){		
 	//phoneGap and jQueryMobile do not support toast messages directly
@@ -82,3 +81,4 @@ function createNotification() {
    	});
     
 }
+*/
